@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试添加用户</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1>测试<%= title %></h1>
+<form method="post" action="/users/postUser">
+    <div class="form-item">
+        <label for="username">用户名</label>
+        <input type="text" name="username" placeholder="username"/>
+    </div>
+    <div class="form-item">
+        <label for="password">密码</label>
+        <input type="password" name="password" placeholder="password"/>
+    </div>
+    <div class="form-item">
+        <label for="phone">手机</label>
+        <input type="number" name="phone" placeholder="phone"/>
+    </div>
+    <div class="form-item">
+        <input type="submit"/>
+    </div>
+</form>
+</body>
+</html>
